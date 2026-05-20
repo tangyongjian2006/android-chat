@@ -28,19 +28,19 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
-        maven { url 'https://jitpack.io' }
+//    maven { url 'https://maven.aliyun.com/repository/public' }
+//    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+//    maven { url 'https://maven.aliyun.com/repository/google' }
+//    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url 'https://jitpack.io' }
 
-        maven { url "https://developer.huawei.com/repo/"}
-        maven { url "https://mvn.getui.com/nexus/content/repositories/releases/" }
-        maven { url 'https://developer.hihonor.com/repo/' }
+    maven { url "https://developer.huawei.com/repo/"}
+    maven { url "https://mvn.getui.com/nexus/content/repositories/releases/" }
+    maven { url 'https://developer.hihonor.com/repo/' }
 
-        google()
-        mavenCentral()
-    }
+    google()
+    mavenCentral()
+}
     configurations {
         all {
             resolutionStrategy {
